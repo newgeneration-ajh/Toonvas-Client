@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+    
+    <TableRow>
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ID    : "/>
+            
+        <EditText 
+            android:id="@+id/joinID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="아이디를 입력하세요."
+            android:selectAllOnFocus="true"
+            android:singleLine="true"/>
+       
+    </TableRow>
+    
+    <TableRow >
+        
+        <TextView 
+            android:layout_width="wrap_content"
+           	android:layout_height="wrap_content"
+            android:text="PW : "/>
+        
+        <EditText
+            android:id="@+id/joinPW"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="비밀번호를 입력하세요."
+            android:selectAllOnFocus="true"
+            android:singleLine="true"/>
+    </TableRow>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+        
+        <Button
+            android:id="@+id/joinOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Join"/>
+        
+        <Button
+            android:id="@+id/joinCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"/>
+    </LinearLayout>
+    
+
+</TableLayout>

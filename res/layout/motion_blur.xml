@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/motion_blur_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <RadioGroup 
+        android:id="@+id/motion_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@+id/doHorizontal"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+        
+        <RadioButton 
+        	android:id="@+id/doHorizontal"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="가로"    
+            />
+        
+        <RadioButton 
+        	android:id="@+id/doVertical"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="세로"                
+            />
+    </RadioGroup>
+</RelativeLayout>

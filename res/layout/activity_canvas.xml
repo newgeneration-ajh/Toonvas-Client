@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:scrollbarAlwaysDrawVerticalTrack="false"
+    tools:context="com.secmem.spentest2.canvas.CanvasActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="100dip"
+        android:layout_height="match_parent"
+        android:layout_margin="5dip"
+        android:background="@drawable/menu_image"
+        android:orientation="vertical" >
+
+        <ImageButton
+            android:id="@+id/imageButton_sel"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="70dp"
+            android:layout_marginTop="60dp"
+            android:background="#00000000"
+            android:src="@drawable/btn_selector" />
+
+        <ImageButton
+            android:id="@+id/imageButton_erase"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="70dp"
+            android:background="#00000000"
+            android:src="@drawable/btn_eraser" />
+
+        <ImageButton
+            android:id="@+id/imageButton_pen"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="70dp"
+            android:background="#00000000"
+            android:src="@drawable/btn_pen" />
+
+        <ImageButton
+            android:id="@+id/imageButton_page"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="70dp"
+            android:text="Button" 
+            android:background="#00000000"
+            android:src="@drawable/btn_page"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/imageButton_redo"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="#00000000"
+                android:src="@drawable/btn_redo" />
+
+            <ImageButton
+                android:id="@+id/imageButton_undo"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginBottom="20dp"
+                android:background="#00000000"
+                android:src="@drawable/btn_undo" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/spenViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <EditText
+            android:id="@+id/editBoxPageInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="28dp"
+            android:layout_marginRight="355dp"
+            android:ems="10" />
+
+    </RelativeLayout>
+
+</LinearLayout>
